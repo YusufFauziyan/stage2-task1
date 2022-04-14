@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "photo": "Mouse.Jpg",
+        "productname": "Mouse",
+        "productdesc": "lore ipsumm lmjjasdjk...",
+        "price": "500.000",
+        "qty": "600"
+    },
+    {
+        "id": 2,
+        "photo": "Keyboard.Jpg",
+        "productname": "Keyboard",
+        "productdesc": "lore ipsumm keyboard...",
+        "price": "700.000",
+        "qty": "600"
+    },
+    {
+        "id": 3,
+        "photo": "Bag.Jpg",
+        "productname": "Bag",
+        "productdesc": "lore ipsumm Bag...",
+        "price": "500.000",
+        "qty": "600"
+    },
+    {
+        "id": 4,
+        "photo": "Laptop.Jpg",
+        "productname": "Mouse",
+        "productdesc": "lore ipsumm Laptop...",
+        "price": "10.500.000",
+        "qty": "60"
+    },
+    {
+        "id": 5,
+        "photo": "vga.Jpg",
+        "productname": "VGA",
+        "productdesc": "lore ipsumm VGA...",
+        "price": "8.500.000",
+        "qty": "20"
+    },
+    {
+        "id": 6,
+        "photo": "monitor.Jpg",
+        "productname": "Monitor",
+        "productdesc": "lore ipsumm Monitor...",
+        "price": "2.500.000",
+        "qty": "100"
+    }
+]

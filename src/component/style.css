@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800;900&family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;;
+}
+
+.container-lr {
+    height: 100vh;
+}
+.container-height {
+    height: 60vh;
+}
+
+/* Color Font */
+.text-secondary-2 {
+    color:#6A6A6A;
+}
+.text-use {
+    color: rgba(247, 77, 77, 1);
+}
+
+/* BG */
+.bg-form {
+    background-color: #181818;
+}
+.bg-input {
+    background-color: rgba(210, 210, 210, 0.25);
+}
+.bg-use {
+    background-color: rgba(247, 77, 77, 1);
+}
+.bg-card {
+    background-color: #212121;
+}
+.bg-green {
+    background-color: rgba(86, 192, 90, 1);
+}
+
+
+/* FONT-WEIGHT & Font Size */
+.fw-900 {
+    font-weight: 900;
+}
+.fw-800 {
+    font-weight: 800;
+}
+.fw-700 {
+    font-weight: 700;
+}
+.fw-600 {
+    font-weight: 600;
+}
+.fw-500 {
+    font-weight: 500;
+}
+.fw-300 {
+    font-weight: 300;
+}
+.fs-18 {
+    font-size: 18px;
+}
+.fs-14 {
+    font-size: 14px;
+}
+.fs-12 {
+    font-size: 12px;
+}
+.fs-9 {
+    font-size: 9px;
+}
+
+/* MARGIN */
+.m-6 {margin: 60px;} .mt-6 {margin-top: 60px;} .mb-6 {margin-bottom: 60px;}  .me-6 {margin-right: 60px;}  .ms-6 {margin-left: 60px;}  .my-6 {margin-top: 60px; margin-bottom: 60px;}  .mx-6 {margin-left: 60px; margin-right: 60px;}
+
+
+/* OTHER */
+.modal-content {
+    color: black;
+}
+.modal-header,
+.modal-footer {
+    border: none;
+}
+.modal-body {
+    padding-bottom: 0;
+}
+
+.navbar-nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    padding: 0 10px;
+    transition: .3s;
+}
+.navbar-collapse {
+    flex-grow: unset;
+}
+.px-10 {
+    padding: 0 10%;
+}
+.text-justify {
+    text-align: justify;
+}
+.lh-25 {
+    line-height: 25px;
+}
+.borra-5 {
+    border-radius: 5px;
+}
+.border-none {
+    border: none;
+}
+.text-d-none {
+    text-decoration: none;
+}
+
+/* .active {
+    color: rgba(247, 77, 77, 1) !important;
+} */
+
+/* HOVER */
+.navbar-nav a:hover {
+    color: rgba(247, 77, 77, 1) !important;
+}
+.product-link:hover {
+    color: rgba(247, 77, 77, .8) ;
+    transition: .3s;
+}
+.edit:hover,
+.modal-footer .modalyes:hover{
+   background-color: rgba(86, 192, 90, .5);
+}
+.delete:hover,
+.modal-footer .modalno:hover {
+   background-color: rgba(247, 77, 77, .5);
+}
+
+
+
+@media only screen and (max-width: 991px) {
+    .container-lr {
+      text-align: center;
+    }
+    .form {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center !important;
+    }
+}

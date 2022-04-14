@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "categoryname": "Mouse"
+    },
+    {
+        "id": 2,
+        "categoryname": "Keyboard"
+    },
+    {
+        "id": 3,
+        "categoryname": "Bag"
+    },
+    {
+        "id": 4,
+        "categoryname": "Laptop"
+    },
+    {
+        "id": 5,
+        "categoryname": "VGA"
+    },
+    {
+        "id": 6,
+        "categoryname": "Monitor"
+    }
+]

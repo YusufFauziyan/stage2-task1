@@ -1,0 +1,10 @@
+<Router>
+        <NavbarComp/>
+
+        <Routes>
+          <Route exact path="/" element={<Product />}/>
+          <Route exact path="/detailproduct" element={<DetailProduct />} />
+          <Route exact path="/complain" element={<ChatUser />} />
+          <Route exact path="/profile" element={<Profile />} />
+        </Routes>
+</Router>
