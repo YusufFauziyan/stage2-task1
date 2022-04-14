@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css'
 import './App.css'
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import NavbarComp from "./component/NavbarComp"
 import MessageBtn from "./component/MessageBtn"
@@ -26,17 +26,24 @@ function App() {
   return (
     <>
       <Router>
+        <NavbarComp />
         <NavbarAdmin />
       
         <Routes>
+          <Route exact path="/login" element={<Login />}/>
+          <Route exact path="/register" element={<Register />}/>
           <Route exact path="/" element={<Product />}/>
+          <Route exact path="/detail-product" element={<DetailProduct />}/>
+          <Route exact path="/complain-user" element={<ChatUser />} />
           <Route exact path="/complain" element={<ChatAdmin />} />
           <Route exact path="/category" element={<CategoryList />} />
           <Route exact path="/product" element={<ListProduct />} />
           <Route exact path="/category/edit-category" element={<EditCategory />} />
           <Route exact path="/product/edit-product" element={<EditProduct />} />
+          <Route exact path="/profile" element={<Profile />} />
+
         </Routes>
-        </Router>
+      </Router>
     </>
   );
 }

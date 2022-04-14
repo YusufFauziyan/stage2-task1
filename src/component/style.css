@@ -131,8 +131,10 @@ body {
    background-color: rgba(86, 192, 90, .5);
 }
 .delete:hover,
-.modal-footer .modalno:hover {
-   background-color: rgba(247, 77, 77, .5);
+.modal-footer .modalno:hover,
+.btn-register:hover,
+.btn-login:hover {
+   background-color: rgba(247, 77, 77, .5) !important;
 }
 
 

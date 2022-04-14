@@ -17,7 +17,7 @@ export default class CategoryList extends Component {
                         <th scope="col" className='col-4 fw-700 py-3 pe-3'>Action</th>
                     </tr>
                 </thead>
-                {Data.map(item =>{
+                {Data.map((item) =>{
                     return (
                         <tbody>
                             <tr>

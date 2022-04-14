@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import {Navbar, Container, Nav} from 'react-bootstrap'
 import { NavLink } from "react-router-dom";
+import 'boxicons'
 
 export default class NavbarComp extends Component {
   render() {
@@ -23,7 +24,7 @@ export default class NavbarComp extends Component {
                 <NavLink style={navLinkStyle} to="/complain" >Complain</NavLink>
                 <NavLink style={navLinkStyle} to="/category" >Category</NavLink>
                 <NavLink style={navLinkStyle} to="/product" >Product</NavLink>
-                <NavLink style={navLinkStyle} to="/" >Logout</NavLink>
+                <NavLink style={navLinkStyle} to="/login" >Logout</NavLink>
               </Nav>
             </Navbar.Collapse>
           </Container>

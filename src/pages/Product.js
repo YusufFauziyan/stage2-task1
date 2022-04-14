@@ -11,7 +11,7 @@ export default class Product extends Component {
                 <div style={{borderRadius: "0 0 10px 10px"}} className="bg-card me-4">
                     <img src={require("../component/img/mouse.png")} alt="" />
                     <div className="p-3">
-                        <Link to='/detailproduct' className="text-use text-decoration-none fw-600 fs-18 product-link">Mouse</Link>
+                        <Link to='/detail-product' className="text-use text-decoration-none fw-600 fs-18 product-link">Mouse</Link>
                         <p className="fs-14 mb-2 mt-3">Rp. 500.000</p>
                         <p className="fs-14 mb-1">Stock: 600</p>
                     </div>

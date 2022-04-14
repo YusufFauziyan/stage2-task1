@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 function Register() {
   return (
@@ -12,12 +13,12 @@ function Register() {
                 </div>
                 
                 <div>
-                    <a href="#link">
-                        <button className="btn register text-secondary fw-600 py-2 px-5 me-2">Login</button>
-                    </a>
-                    <a href="#link">
-                        <button className="btn login bg-use py-2 px-5 fw-600 text-white">Register</button>
-                    </a>
+                    <Link to="/login">
+                        <button className="btn btn-login text-secondary fw-600 py-2 px-5 me-2">Login</button>
+                    </Link>
+                    <Link to="/register">
+                        <button className="btn btn-register bg-use py-2 px-5 fw-600 text-white ">Register</button>
+                    </Link>
                 </div>
             </div>
 
@@ -28,7 +29,7 @@ function Register() {
                     <input type="email" className="bg-input mb-4 fw-600 form-control" id="formGroupExampleInput" placeholder="Email" />
                     <input type="password" className="bg-input fw-600 form-control" id="formGroupExampleInput" placeholder="Password" />
                     <a href="#link">
-                        <button className="btn login bg-use mt-5 fw-600 text-white" style={{width: "100%"}}>Register</button>
+                        <button className="btn btn-register bg-use mt-5 fw-600 text-white" style={{width: "100%"}}>Register</button>
                     </a>
                 </div>
             </div>

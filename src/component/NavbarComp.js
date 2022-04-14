@@ -20,9 +20,9 @@ export default class NavbarComp extends Component {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto" style={{justifyContent: "flex-end"}}>
-                <NavLink style={navLinkStyle} to="/complain" >Complain</NavLink>
+                <NavLink style={navLinkStyle} to="/complain-user" >Complain</NavLink>
                 <NavLink style={navLinkStyle} to="/profile" >Profile</NavLink>
-                <NavLink style={navLinkStyle} to="/" >Logout</NavLink>
+                <NavLink style={navLinkStyle} to="/login" >Logout</NavLink>
               </Nav>
             </Navbar.Collapse>
           </Container>
