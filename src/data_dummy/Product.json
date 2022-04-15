@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "Mouse",
+        "image": "mouse.png",
+        "price": "500.000",
+        "stock": "600"
+    },
+    {
+        "id": 2,
+        "title": "Keyboard",
+        "image": "keyboard.png",
+        "price": "700.000",
+        "stock": "600"
+    },
+    {
+        "id": 3,
+        "title": "Laptop",
+        "image": "laptop.png",
+        "price": "10.500.000",
+        "stock": "600"
+    },
+    {
+        "id": 4,
+        "title": "Headset",
+        "image": "headset.png",
+        "price": "700.000",
+        "stock": "60"
+    },
+    {
+        "id": 5,
+        "title": "VGA",
+        "image": "vga.png",
+        "price": "8.500.000",
+        "stock": "20"
+    },
+    {
+        "id": 6,
+        "title": "Monitor",
+        "image": "monitor.png",
+        "price": "2.500.000",
+        "stock": "100"
+    }
+]

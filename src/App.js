@@ -4,7 +4,7 @@ import './App.css'
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import NavbarComp from "./component/NavbarComp"
-import MessageBtn from "./component/MessageBtn"
+
 import Login from "./pages/Login"
 import Register from "./pages/Register"
 import Product from "./pages/Product"
@@ -18,32 +18,31 @@ import CategoryList from './pages/admin/CategoryList';
 import ListProduct from './pages/admin/ListProduct';
 import EditCategory from './pages/admin/EditCategory';
 import EditProduct from './pages/admin/EditProduct';
+import PrivateRoute from './component/PrivateRoute'
 
-
-
-
-function App() {
+const App = () => {
   return (
     <>
-      <Router>
-        <NavbarComp />
-        <NavbarAdmin />
-      
-        <Routes>
-          <Route exact path="/login" element={<Login />}/>
-          <Route exact path="/register" element={<Register />}/>
-          <Route exact path="/" element={<Product />}/>
-          <Route exact path="/detail-product" element={<DetailProduct />}/>
-          <Route exact path="/complain-user" element={<ChatUser />} />
-          <Route exact path="/complain" element={<ChatAdmin />} />
-          <Route exact path="/category" element={<CategoryList />} />
-          <Route exact path="/product" element={<ListProduct />} />
-          <Route exact path="/category/edit-category" element={<EditCategory />} />
-          <Route exact path="/product/edit-product" element={<EditProduct />} />
-          <Route exact path="/profile" element={<Profile />} />
+    <Router>
+      <NavbarAdmin />
+    <Routes >
+      <Route exact path="/login" element={<Login />}/>
+      <Route exact path="/register" element={<Register />}/>
+          <Route element={<PrivateRoute/>}>
+            <Route exact path="/" element={<Product />}/>
+            <Route exact path="/detail-product/:id" element={<DetailProduct />}/>
+            <Route exact path="/complain-user" element={<ChatUser />} />
+            <Route exact path="/complain" element={<ChatAdmin />} />
+            <Route exact path="/category" element={<CategoryList />} />
+            <Route exact path="/product" element={<ListProduct />} />
+            <Route exact path="/category/edit-category" element={<EditCategory />} />
+            <Route exact path="/product/edit-product" element={<EditProduct />} />
+            <Route exact path="/profile" element={<Profile />} />
+            <Route exact path="/profile" element={<Profile />} />
+        </Route>
 
-        </Routes>
-      </Router>
+      </Routes>
+    </Router>
     </>
   );
 }

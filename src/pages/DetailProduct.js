@@ -1,31 +1,40 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { useParams } from 'react-router-dom'
+import Data from "../data_dummy/DetailProduct.json"
 
-export default class DetailProduct extends Component {
-  render() {
-    return (
+
+function DetailProduct () {
+  const params = useParams()
+  const index = params.id
+
+  console.log(Data);
+  
+    return ( 
       <>
         <div className=" container container-height mt-5 d-md-flex">
-          <img src={require('../component/img/mouse.png')} className="pb-3" alt="mouse"/>
+          <img src={require(`../component/img/${Data[index].image}`)} className="pb-3" alt="mouse"/>
           <div className='ms-md-5'>
-            <h1 className="text-use fw-800">Mouse</h1>
-            <p className='mb-5'>Stock: 600</p>
+            <h1 className="text-use fw-800">{Data[index].title}</h1>
+            <p className='mb-5'>Stock: {Data[index].stock}</p>
             <ul style={{listStyleType: '"- "', lineHeight: '30px'}} className="mb-3 fs-14 p-2">
-              <li>Wireless Mouse</li>
-              <li>Konektivitas wireles 2.4 GHz</li>
-              <li>Jarak wireles hingga 10 M</li>
-              <li>Plug and Play</li>
-              <li>Baterai tahan hingga 12 Bulan</li>
+              <li>{Data[index].spec1}</li>
+              <li>{Data[index].spec2}</li>
+              <li>{Data[index].spec3}</li>
+              <li>{Data[index].spec4}</li>
+              <li>{Data[index].spec5}</li>
             </ul>
             <div style={{width: "80%"}}>
-              <p className='text-justify fs-14 lh-25 fw-300'>Mouse Wireless Alytech AL - Y5D, hadir dengan desain 3 tombol mouse yang ringan dan mudah dibawa. Mouse ini menggunakan frekuensi radio 2.4GHz (bekerja hingga jarak 10m) dan fitur sensor canggih optik pelacakan dengan penerima USB yang kecil. Mouse ini didukung oleh 1x baterai AA (hingga 12 bulan hidup baterai). mendukung sistem operasi Windows 7,8, 10 keatas, Mac OS X 10.8 atau yang lebih baru dan sistem operasi Chrome OS.</p>
-              <h4 className='text-use fw-900 mt-4 text-end'>Rp. 500. 000</h4>
+              <p className='text-justify fs-14 lh-25 fw-300'>{Data[index].desc}</p>
+              <h4 className='text-use fw-900 mt-4 text-end'>Rp. {Data[index].price}</h4>
               <a href="#link" className='row text-d-none px-3' >
-                  <button className="btn mt-5 delete bg-use py-2 fw-600 text-white">Buy</button>
+                  <button className="btn mt-5 delete bg-use py-2 fw-600 text-white">{Data[index].price}</button>
               </a>
             </div>
           </div>
         </div>
       </>
     )
-  }
 }
+
+export default DetailProduct
+

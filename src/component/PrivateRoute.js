@@ -1,13 +1,18 @@
 // import necessary object from rrd
-import { Outlet, Navigate } from "react-router-dom";
+import { Outlet, Navigate } from "react-router";
 
-const PrivateRoute = ({ element: Component, ...rest }) => {
-    // assume that user is not login yet
-    const isLogin = true;
+const useAuth = () => {
+    const user = localStorage.getItem('user')
+    if(user){
+        return true
+    } else {
+        return false
+    }
+}
 
-    return (
-        isLogin ? <Outlet /> : <Navigate to="/login" />
-    );
-};
+const PrivateRoute = (props) => {
+    const isAuth = useAuth();
+    return isAuth ? <Outlet/> : <Navigate to='/login' />
+}
 
-export default PrivateRoute;
+export default PrivateRoute

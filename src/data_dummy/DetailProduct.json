@@ -1,0 +1,80 @@
+[
+    {
+
+    },
+    {
+        "id": 1,
+        "title": "Mouse",
+        "image": "mouse.png",
+        "stock": "600",
+        "spec1": "Wireless Mouse",
+        "spec2": "Konektivitas wireles 2.4 GHz",
+        "spec3": "Jarak wireles hingga 10 M<",
+        "spec4": "Plug and Playe",
+        "spec5": "Baterai tahan hingga 12 Bulan",
+        "desc": "Mouse Wireless Alytech AL - Y5D, hadir dengan desain 3 tombol mouse yang ringan dan mudah dibawa. Mouse ini menggunakan frekuensi radio 2.4GHz (bekerja hingga jarak 10m) dan fitur sensor canggih optik pelacakan dengan penerima USB yang kecil. Mouse ini didukung oleh 1x baterai AA (hingga 12 bulan hidup baterai). mendukung sistem operasi Windows 7,8, 10 keatas, Mac OS X 10.8 atau yang lebih baru dan sistem operasi Chrome OS.",
+        "price": "500. 000"
+    },
+    {
+        "id": 2,
+        "title": "Keyboard",
+        "image": "keyboard.png",
+        "stock": "600",
+        "spec1": "Wireless keyboard",
+        "spec2": "Konektivitas wireles 2.4 GHz",
+        "spec3": "Jarak wireles hingga 10 M<",
+        "spec4": "Plug and Playe",
+        "spec5": "Charger Type C, Support fast charging",
+        "desc": "Keyboard Wireless logitec AL - Y5D, hadir dengan desain tombol RGB yang dengan key swhtich yang enak didengar dan ditekan. Keyboard ini menggunakan frekuensi radio 2.4GHz (bekerja hingga jarak 10m) dan tersedia beberapa keyswhtch, diantaranya red, blue, dan brown. Keyboard ini didukung oleh port type C dengan support fast charging. mendukung sistem operasi Windows 7,8, 10 keatas, Mac OS X 10.8 atau yang lebih baru dan sistem operasi Chrome OS.",
+        "price": "700. 000"
+    },
+    {
+        "id": 3,
+        "title": "Laptop",
+        "image": "laptop.png",
+        "stock": "600",
+        "spec1": "Wireless Laptop",
+        "spec2": "Konektivitas wireles 2.4 GHz",
+        "spec3": "Jarak wireles hingga 10 M<",
+        "spec4": "Plug and Playe",
+        "spec5": "Charger Type C, Support fast charging",
+        "desc": "Laptop Wireless logitec AL - Y5D, hadir dengan desain tombol RGB yang dengan key swhtich yang enak didengar dan ditekan. Keyboard ini menggunakan frekuensi radio 2.4GHz (bekerja hingga jarak 10m) dan tersedia beberapa keyswhtch, diantaranya red, blue, dan brown. Keyboard ini didukung oleh port type C dengan support fast charging. mendukung sistem operasi Windows 7,8, 10 keatas, Mac OS X 10.8 atau yang lebih baru dan sistem operasi Chrome OS.",
+        "price": "10.500. 000"
+    },{
+        "id": 4,
+        "title": "Headset",
+        "image": "headset.png",
+        "stock": "60",
+        "spec1": "Wireless Headset",
+        "spec2": "Konektivitas wireles 2.4 GHz",
+        "spec3": "Jarak wireles hingga 10 M<",
+        "spec4": "Plug and Playe",
+        "spec5": "Charger Type C, Support fast charging",
+        "desc": "Headset Wireless logitec AL - Y5D, hadir dengan desain tombol RGB yang dengan key swhtich yang enak didengar dan ditekan. Keyboard ini menggunakan frekuensi radio 2.4GHz (bekerja hingga jarak 10m) dan tersedia beberapa keyswhtch, diantaranya red, blue, dan brown. Keyboard ini didukung oleh port type C dengan support fast charging. mendukung sistem operasi Windows 7,8, 10 keatas, Mac OS X 10.8 atau yang lebih baru dan sistem operasi Chrome OS.",
+        "price": "500. 000"
+    },{
+        "id": 5,
+        "title": "VGA",
+        "image": "vga.png",
+        "stock": "20",
+        "spec1": "Wireless VGA",
+        "spec2": "Konektivitas wireles 2.4 GHz",
+        "spec3": "Jarak wireles hingga 10 M<",
+        "spec4": "Plug and Playe",
+        "spec5": "Charger Type C, Support fast charging",
+        "desc": "VGA Wireless logitec AL - Y5D, hadir dengan desain tombol RGB yang dengan key swhtich yang enak didengar dan ditekan. Keyboard ini menggunakan frekuensi radio 2.4GHz (bekerja hingga jarak 10m) dan tersedia beberapa keyswhtch, diantaranya red, blue, dan brown. Keyboard ini didukung oleh port type C dengan support fast charging. mendukung sistem operasi Windows 7,8, 10 keatas, Mac OS X 10.8 atau yang lebih baru dan sistem operasi Chrome OS.",
+        "price": "8.500. 000"
+    },{
+        "id": 6,
+        "title": "Monitor",
+        "image": "monitor.png",
+        "stock": "600",
+        "spec1": "Wireless Monitor",
+        "spec2": "Konektivitas wireles 2.4 GHz",
+        "spec3": "Jarak wireles hingga 10 M<",
+        "spec4": "Plug and Playe",
+        "spec5": "Charger Type C, Support fast charging",
+        "desc": "Monitor Wireless logitec AL - Y5D, hadir dengan desain tombol RGB yang dengan key swhtich yang enak didengar dan ditekan. Keyboard ini menggunakan frekuensi radio 2.4GHz (bekerja hingga jarak 10m) dan tersedia beberapa keyswhtch, diantaranya red, blue, dan brown. Keyboard ini didukung oleh port type C dengan support fast charging. mendukung sistem operasi Windows 7,8, 10 keatas, Mac OS X 10.8 atau yang lebih baru dan sistem operasi Chrome OS.",
+        "price": "2.500. 000"
+    }
+]

@@ -1,15 +1,15 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import Data from "../../data_dummy/categoryproduct.json"
+import MessageBtn from '../../component/MessageBtn'
 
-export default class CategoryList extends Component {
-  render() {
-
+function CategoryList () {
+    const [modalShow, setModalShow] = useState(false);
     return (
       <>
         <div className=" container mt-5">
             <h2 className="fw-900 mt-5 mb-3">List Category</h2>
-            <table class="table table-dark table-striped">
+            <table class="table table-dark table-striped" id='table'>
                 <thead >
                     <tr>
                         <th scope="col" className='col-4 fw-700 p-3'>No</th>
@@ -28,7 +28,7 @@ export default class CategoryList extends Component {
                                         <button className="btn edit bg-green py-2 px-lg-5 fw-600 text-white">Edit</button>
                                     </NavLink>
                                     <a href="#link">
-                                        <button className="btn delete bg-use py-2 px-lg-5 fw-600 text-white">Delete</button>
+                                        <button className="btn delete bg-use py-2 px-lg-5 fw-600 text-white" onClick={() => setModalShow(true)}>Delete</button>
                                     </a>
                                 </td>
                             </tr>
@@ -36,8 +36,10 @@ export default class CategoryList extends Component {
                         )
                     })}
             </table>
+            <MessageBtn show={modalShow} onHide={() => setModalShow(false)}/>
         </div>
       </>
     )
-  }
 }
+
+export default CategoryList

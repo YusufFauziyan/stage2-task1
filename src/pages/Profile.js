@@ -29,7 +29,7 @@ export default class Profile extends Component {
                 </div>
                 <div className="col-lg-4">
                     <h2 className="fw-700 text-use">My Transaction</h2>
-                    <div className="mt-5 d-flex bg-card row p-3">
+                    <div className="mt-5 d-flex bg-card profile-card row p-3">
                         <img className='col-4' src={require('../component/img/mouse.png')} alt="mouse"/>
                         <div className='col-5'>
                             <p className="fs-14 text-use fw-700 m-0">Mouse</p>

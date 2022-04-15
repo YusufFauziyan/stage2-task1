@@ -113,10 +113,13 @@ body {
 .text-d-none {
     text-decoration: none;
 }
+.cursor-pointer {
+    cursor: pointer;
+}
 
-/* .active {
+.active {
     color: rgba(247, 77, 77, 1) !important;
-} */
+}
 
 /* HOVER */
 .navbar-nav a:hover {
@@ -137,6 +140,30 @@ body {
    background-color: rgba(247, 77, 77, .5) !important;
 }
 
+/* LIGHT THEME */
+.light-theme,
+.light-theme .navbar {
+    background-color: rgb(255, 255, 255) !important;
+    color: black;
+}
+.light-theme .navlink {
+    color: #6A6A6A;
+}
+.light-theme .bg-form{
+    background-color: white;
+    box-shadow: 0 0 5px #6A6A6A;
+}
+.light-theme .change-theme {
+    color:rgba(247, 77, 77, 1);
+}
+.light-theme .bg-card {
+    color: white !important;
+}
+.light-theme .profile-card,
+.light-theme .btn-add {
+    background-color: #b6b4b4 !important;
+    border: none;
+}
 
 
 @media only screen and (max-width: 991px) {

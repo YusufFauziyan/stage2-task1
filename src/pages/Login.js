@@ -1,7 +1,15 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Login = () => {
+
+  const navigate = useNavigate()
+
+  const login = () => {
+    localStorage.setItem('user', 'test')
+    navigate('/')
+  }
+
   return (
     <> 
         <div className="d-flex row container container-lr align-items-center m-auto">
@@ -26,9 +34,7 @@ const Login = () => {
                 <h2 className='fw-900 mb-5'>Login</h2>
                 <input type="email" className="bg-input mb-4 fw-600 form-control" id="formGroupExampleInput" placeholder="Email" />
                 <input type="password" className="bg-input fw-600 form-control" id="formGroupExampleInput" placeholder="Password" />
-                <a href="">
-                  <button className="btn btn-login bg-use mt-5 fw-600 text-white" type='submit' style={{width: "100%"}}>Login</button>
-                </a>
+                  <button className="btn btn-login bg-use mt-5 fw-600 text-white" type='submit' style={{width: "100%"}} onClick={login} >Login</button>
               </div>
             </div>
         </div>
