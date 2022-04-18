@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
+import Navbar from '../component/Navbar'
 
 export default class Profile extends Component {
   render() {
     return (
       <>
+      <Navbar />
         <div className=" container mt-5">
             <div className='row profile'>
                 <div className='col-lg-4 '>

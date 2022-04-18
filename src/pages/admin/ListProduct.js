@@ -2,11 +2,13 @@ import React, {useState} from 'react'
 import { Link } from "react-router-dom";
 import Data from "../../data_dummy/listproduct.json"
 import MessageBtn from '../../component/MessageBtn'
+import Navbar from '../../component/Navbar'
 
 function ListProduct () {
     const [modalShow, setModalShow] = useState(false);
     return (
       <>
+      <Navbar />
         <div className=" container mt-5">
             <div className="d-flex justify-content-between">
                 <h2 className="fw-900 mt-5 mb-3">List Product</h2>

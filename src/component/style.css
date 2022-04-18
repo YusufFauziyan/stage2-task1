@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800;900&family=Poppins:wght@400;500;600;700&display=swap');
 
 body {
-    font-family: 'Inter', sans-serif;;
+    font-family: 'Inter', sans-serif;
 }
 
 .container-lr {
@@ -119,6 +119,55 @@ body {
 
 .active {
     color: rgba(247, 77, 77, 1) !important;
+}
+
+/* 404 */
+.star{
+    position:absolute;
+    width:2px;
+    height:2px;
+    background:#fff;
+    right:0;
+    animation:starTwinkle 3s infinite linear;
+}
+
+@keyframes astronautFly{
+  0%{
+    left:-100px;
+  }
+  25%{
+    top:50%;
+    transform:rotate(30deg);
+  }
+  50%{
+    transform:rotate(45deg);
+    top:55%;
+  }
+  75%{
+    top:60%;
+    transform:rotate(30deg);
+  }
+  100%{
+    left:110%;
+    transform:rotate(45deg);
+  }
+}
+@keyframes starTwinkle{
+  0%{
+     background:rgba(255,255,255,0.4);
+  }
+  25%{
+    background:rgba(255,255,255,0.8);
+  }
+  50%{
+   background:rgba(255,255,255,1);
+  }
+  75%{
+    background:rgba(255,255,255,0.8);
+  }
+  100%{
+    background:rgba(255,255,255,0.4);
+  }
 }
 
 /* HOVER */

@@ -1,10 +1,12 @@
 import React, {useState} from 'react'
 import MessageBtn from '../../component/MessageBtn'
+import Navbar from '../../component/Navbar'
 
 function EditProduct () {
   const [modalShow, setModalShow] = useState(false);
     return (
     <>
+    <Navbar />
       <div className=" container mt-5">
           <h2 className="fw-900 my-5">List Product</h2>
           <div className="d-flex">

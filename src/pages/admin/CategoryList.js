@@ -2,11 +2,13 @@ import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import Data from "../../data_dummy/categoryproduct.json"
 import MessageBtn from '../../component/MessageBtn'
+import Navbar from '../../component/Navbar'
 
 function CategoryList () {
     const [modalShow, setModalShow] = useState(false);
     return (
       <>
+      <Navbar />
         <div className=" container mt-5">
             <h2 className="fw-900 mt-5 mb-3">List Category</h2>
             <table class="table table-dark table-striped" id='table'>

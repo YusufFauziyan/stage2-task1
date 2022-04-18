@@ -1,4 +1,3 @@
-// import necessary object from rrd
 import { Outlet, Navigate } from "react-router";
 
 const useAuth = () => {
@@ -10,7 +9,7 @@ const useAuth = () => {
     }
 }
 
-const PrivateRoute = (props) => {
+const PrivateRoute = () => {
     const isAuth = useAuth();
     return isAuth ? <Outlet/> : <Navigate to='/login' />
 }

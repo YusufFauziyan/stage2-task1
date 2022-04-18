@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
+import Navbar from '../component/Navbar'
 
 export default class ChatUser extends Component {
   render() {
     return (
       <>
+      <Navbar />
         <div className=" container mt-5">
             <div className='row'>
                 <div className='col-4 d-flex'>

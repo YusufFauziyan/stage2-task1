@@ -1,14 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 
 const Login = () => {
 
   const navigate = useNavigate()
 
-  const login = () => {
+  const login = (e) => {
+    e.preventDefault()
     localStorage.setItem('user', 'test')
     navigate('/')
   }
+
 
   return (
     <> 
@@ -30,12 +32,12 @@ const Login = () => {
             </div>
 
             <div className="form col-lg-6 d-lg-flex justify-content-end">
-              <div className="bg-form p-5 " style={{width: "416px", borderRadius: "10px"}}> 
+              <form onSubmit={login} className="bg-form p-5 " style={{width: "416px", borderRadius: "10px"}}> 
                 <h2 className='fw-900 mb-5'>Login</h2>
-                <input type="email" className="bg-input mb-4 fw-600 form-control" id="formGroupExampleInput" placeholder="Email" />
-                <input type="password" className="bg-input fw-600 form-control" id="formGroupExampleInput" placeholder="Password" />
-                  <button className="btn btn-login bg-use mt-5 fw-600 text-white" type='submit' style={{width: "100%"}} onClick={login} >Login</button>
-              </div>
+                <input type="email" className="bg-input mb-4 fw-600 form-control" id="formGroupExampleInput" placeholder="Email" name='email' />
+                <input type="password" className="bg-input fw-600 form-control" id="formGroupExampleInput" placeholder="Password" name='password' />
+                  <button className="btn btn-login bg-use mt-5 fw-600 text-white"  style={{width: "100%"}} >Login</button>
+              </form>
             </div>
         </div>
     </>

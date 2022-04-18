@@ -19,15 +19,16 @@ import ListProduct from './pages/admin/ListProduct';
 import EditCategory from './pages/admin/EditCategory';
 import EditProduct from './pages/admin/EditProduct';
 import PrivateRoute from './component/PrivateRoute'
+import PageNotFound from './component/404/PageNotFound';
 
 const App = () => {
   return (
     <>
     <Router>
-      <NavbarAdmin />
     <Routes >
       <Route exact path="/login" element={<Login />}/>
       <Route exact path="/register" element={<Register />}/>
+      <Route exact path='/*' element={<PageNotFound />}/>
           <Route element={<PrivateRoute/>}>
             <Route exact path="/" element={<Product />}/>
             <Route exact path="/detail-product/:id" element={<DetailProduct />}/>
@@ -37,7 +38,6 @@ const App = () => {
             <Route exact path="/product" element={<ListProduct />} />
             <Route exact path="/category/edit-category" element={<EditCategory />} />
             <Route exact path="/product/edit-product" element={<EditProduct />} />
-            <Route exact path="/profile" element={<Profile />} />
             <Route exact path="/profile" element={<Profile />} />
         </Route>
 

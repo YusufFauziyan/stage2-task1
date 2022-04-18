@@ -1,6 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import Data from "../data_dummy/DetailProduct.json"
+import Navbar from '../component/Navbar'
 
 
 function DetailProduct () {
@@ -11,6 +12,7 @@ function DetailProduct () {
   
     return ( 
       <>
+      <Navbar />
         <div className=" container container-height mt-5 d-md-flex">
           <img src={require(`../component/img/${Data[index].image}`)} className="pb-3" alt="mouse"/>
           <div className='ms-md-5'>
